@@ -1,0 +1,65 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  
+</head>
+<body>
+
+ <iframe src="https://www.vmixcall.com/" allow="camera *;microphone *" style="position:absolute;top:10;left:10;width:90%;height:95%;"></iframe> 
+
+
+	<img id="next" src="https://raw.githubusercontent.com/bscav/Remote1/master/images/next.png" width="125" height="125" align="right">
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+	<img id="back" src="https://raw.githubusercontent.com/bscav/Remote1/master/images/back.png" width="125" height="125" align="right">
+	
+    
+
+<script>
+	$("#next").mousedown(function(){
+	$.get('http://94.75.123.182:8875/press/bank/1/3');});
+	
+
+
+$(document).ready(function()
+{
+    $("#next").mouseup(function() 
+    {
+        $(this).attr("src", "https://raw.githubusercontent.com/bscav/Remote1/master/images/next.png");
+    });
+    
+    $("#next").mousedown(function()
+    {
+        $(this).attr("src", "https://raw.githubusercontent.com/bscav/Remote1/master/images/nextclick.png");
+    });
+});
+
+$("#back").mousedown(function(){
+$.get('http://94.75.123.182:8875/press/bank/1/1');});
+
+$(document).ready(function()
+{
+    $("#back").mouseup(function() 
+    {
+        $(this).attr("src", "https://raw.githubusercontent.com/bscav/Remote1/master/images/back.png");
+    });
+    
+    $("#back").mousedown(function()
+    {
+        $(this).attr("src", "https://raw.githubusercontent.com/bscav/Remote1/master/images/backclick.png");
+    });
+});
+
+
+
+</script>
+
+</body>
+</html>
