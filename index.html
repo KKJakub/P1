@@ -62,14 +62,15 @@ body {
 
 
 </style>  
- 
-        
-        
-<iframe src="https://www.vmixcall.com/" allow="camera *;microphone *" style="position:absolute;top:100;left:0;width:90%;height:95%;"></iframe>
-<br>
-<button class="button button1" id="next">NASTĘPNY SLAJD</button>
 
-<button class="button button2" id="back">POPRZEDNI SLAJD</button> 
+<button class="button button1" style="position: relative; left: 91%; top: 0px" id="next">NASTĘPNY SLAJD</button>
+
+<button class="button button2" style="position: absolute; left: 91%; top: 100px" id="back">POPRZEDNI SLAJD</button>  
+        
+        
+<iframe src="https://www.vmixcall.com/" allow="camera *;microphone * " style="position:absolute;top:0;left:0;width:90%;height:95%;"></iframe>
+
+
 
 	
 
@@ -81,13 +82,15 @@ body {
 
 <script>
 	//-- tu trzeba zmienic przycisk next--//
+
 	$("#next").mousedown(function(){
 	$.get('http://ba3dd29a0bce.ngrok.io/press/bank/1/2');});
 
 
 
 
-        //-- tu trzeba zmienic przycisk back--//
+	//-- tu trzeba zmienic przycisk back--//
+
 	$("#back").mousedown(function(){
 	$.get('http://ba3dd29a0bce.ngrok.io/press/bank/1/3');});
 
